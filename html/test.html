@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<html>
+    <div class="container bg-danger">
+        <div class="col-md-12">
+            <img src="../img/banner.png" style="width: 100%;" alt="">
+        </div>
+
+        <div class="col-md-12">
+            <ul class="navbar-nav nav">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">1qẻwgfiueshgj</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a  data-toggle="modal" data-target="#modaltour" href="">Dang ky</a></li>
+                <li class="nav-item"><a href="">Dang nhap</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-2">
+            <div class="list-group">
+                <a href="" class="list-group-item">Đăng ký</a>
+                <a href="" class="list-group-item">Đăng nhập</a>
+                <a href="" class="list-group-item">1qẻwgfiueshgj</a>
+                <a href="" class="list-group-item">1qẻwgfiueshgj</a>
+                <a href="" class="list-group-item">1qẻwgfiueshgj</a>
+            </div>
+        </div>
+
+        <div class="col-md-10">
+            <nav class="table-responsive">
+                <table class="table table-striped">
+                    <caption>
+                        <h4>Danh sách tour</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Ten</th>
+                            <th>Tuoi</th>
+                            <th>Ngay Sinh</th>
+                            <th>Gioi tinh</th>
+                            <th>Bang cap</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </nav>
+        </div>
+    </div>
+
+    <!-- modal -->
+
+    <div class="modal fade" id="modaltour">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">X</button>
+                    <h4 class="text-center">Đăng ký</h4>
+                </div>
+
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Tên</label>
+                            <input type="text" class="form-control" id="txtten">
+                            <span class="text-danger" id="tbTen">*</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Tuổi</label>
+                            <input type="text" class="form-control" id="txttuoi">
+                            <span class="text-danger">*</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Ngày sinh</label>
+                            <input type="date" class="form-control" id="txtNgaySinh">
+                            <span class="text-danger" id="tbNgaySinh">*</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Giới tính: </label>
+                            <label for="">Nam: </label>
+                            <input type="radio" name="gioitinh" id="gtnam" value="Nam">
+                            <label for="">Nu: </label>
+                            <input type="radio" name="gioitinh" id="gtnu" value="Nam">
+                            <br>
+                            <span class="text-danger" id="tbgioitinh">*</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Chức vụ</label>
+                            <input type="text" class="form-control">
+                            <span class="text-danger">*</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quocgia">Quốc gia:</label>
+                                <select id="quocgia" name="quocgia" class="form-control">
+                                <option value="">-- Chọn quốc gia --</option>
+                                <option value="vn">Việt Nam</option>
+                                <option value="us">Mỹ</option>
+                                <option value="jp">Nhật Bản</option>
+                                </select>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" id="btnSave" class="btn btn-success btn-block">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
